@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+header {
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    height: 68px;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 57px;
+
+    > a {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 500;
+      text-decoration: none;
+      color: $primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
