@@ -1,15 +1,15 @@
 import '../banner/banner.scss';
 
-function Banner(props) {
+function Banner({imageAlt, imageSrc, imageText}) {
     return (
         <section id="banner-section">
             <div>
                 <div id="image-container">
-                    <img id="image" alt={props.imageAlt} src={props.imageSrc}></img>
+                    <img id="image" alt={imageAlt} src={imageSrc}></img>
                     <div id="mask"></div>
                 </div>
                 <div id="image-texte">
-                    <span>{props.imageText}</span>
+                    <span>{imageText}</span>
                 </div>
             </div>
         </section>

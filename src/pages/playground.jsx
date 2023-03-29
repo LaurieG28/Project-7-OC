@@ -1,8 +1,11 @@
-import Thumb from "../components/thumb/thumb";
+import Card from '../components/card/card';
 
 function Playground() {
     return (
-        <Thumb/>
+        <div style={{padding: '50px'}} className="page">
+            <Card title="test"
+                  cover="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"/>
+        </div>
     );
 }
 

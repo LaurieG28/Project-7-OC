@@ -1,5 +1,24 @@
 body {
-  margin: 40px 100px 0;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
+  margin: 0;
+
+  * {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 63px;
+
+    #header {
+      padding: 40px 100px 0;
+    }
+
+    .page {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  }
 }

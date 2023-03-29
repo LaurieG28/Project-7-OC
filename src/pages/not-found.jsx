@@ -1,8 +1,8 @@
-import {Outlet} from "react-router-dom";
+import {Outlet} from 'react-router-dom';
 
 function Error() {
     return (
-        <div className="Error">
+        <div id="error" className="page">
             <p>Error 404</p>
             <Outlet/>
         </div>

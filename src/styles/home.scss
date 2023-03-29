@@ -1,0 +1,12 @@
+@import "./variables";
+
+.housing-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: $big-border-radius;
+  background-color: $light-gray;
+  margin: 43px 0px 0px;
+  gap: 50px 60px;
+  padding: 56px 50px;
+}

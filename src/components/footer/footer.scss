@@ -1,0 +1,18 @@
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  height: 209px;
+
+  .logo {
+    position: absolute;
+    top: 66px;
+  }
+
+  .all-rights {
+    position: absolute;
+    bottom: 29px;
+  }
+}
