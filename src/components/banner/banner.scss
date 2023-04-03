@@ -1,3 +1,5 @@
+@import "src/styles/variables";
+
 #banner-section {
   position: relative;
   height: 223px;
@@ -15,7 +17,7 @@
       justify-content: center;
 
       span {
-        color: #FFFFFF;
+        color: $white;
         font-weight: 500;
         font-size: 48px;
       }
@@ -36,7 +38,7 @@
 
       #mask {
         position: absolute;
-        background: #000000;
+        background: $black;
         mix-blend-mode: darken;
         opacity: 0.3;
         top: 0;

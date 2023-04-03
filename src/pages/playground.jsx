@@ -1,10 +1,9 @@
-import Card from '../components/card/card';
+import Banner from '../components/banner/banner';
 
 function Playground() {
     return (
         <div style={{padding: '50px'}} className="page">
-            <Card title="test"
-                  cover="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"/>
+            <Banner/>
         </div>
     );
 }
