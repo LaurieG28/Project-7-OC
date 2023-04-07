@@ -9,7 +9,6 @@ function Header() {
             <nav>
                 <Link to="/">Accueil</Link>
                 <Link to="/about">A Propos</Link>
-                {/*<Link to="/playground">Playground</Link>*/}
             </nav>
         </header>
     )

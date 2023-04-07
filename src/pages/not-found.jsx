@@ -1,12 +1,14 @@
-import {Outlet} from 'react-router-dom';
+import '../styles/error.scss';
+import {Link} from 'react-router-dom';
 
-function Error() {
+function NotFound() {
     return (
         <div id="error" className="page">
-            <p>Error 404</p>
-            <Outlet/>
+            <span className="number">404</span>
+            <span className="content">Oups ! La page que vous demandez n'éxiste pas.</span>
+            <Link className="link" to="/">Retourner sur la page d'accueil</Link>
         </div>
     );
 }
 
-export default Error;
+export default NotFound;

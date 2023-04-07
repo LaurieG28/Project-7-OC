@@ -11,7 +11,9 @@ function Home() {
 
             <div className="housing-gallery">
                 {
-                    housing[0].map((house, i) => (<Card key={i} title={house.title} cover={house.cover}/>))
+                    housing.map((house, i) => (
+                        <Card key={i} id={house.id} title={house.title} cover={house.cover}/>
+                    ))
                 }
             </div>
         </div>

@@ -1,0 +1,78 @@
+@import "./variables";
+
+.location-host {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  span {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+    color: $primary;
+  }
+
+  .host-infos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    .name {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: right;
+        color: $primary;
+      }
+    }
+
+    .host-picture {
+      max-width: 64px;
+      border-radius: 32px;
+    }
+  }
+}
+
+.location {
+  font-weight: 500;
+  color: $primary;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.housing-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .star {
+    display: flex;
+    gap: 15.25px;
+  }
+}
+
+.housing-sheet-accordions {
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+  margin-top: 24px;
+
+  .accordion {
+    flex: 50%;
+
+    .equipment {
+      height: 26px;
+    }
+  }
+}
+

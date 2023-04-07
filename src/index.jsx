@@ -7,6 +7,7 @@ import Error from './pages/not-found';
 import Layout from './pages/layout';
 import Home from './pages/home';
 import '@fontsource/montserrat';
+import HousingSheet from './pages/housing-sheet';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
                     <Route index element={<Home/>}/>
                     <Route path="about" element={<About/>}/>
                     <Route path="*" element={<Error/>}/>
+                    <Route path="housing-sheet/:id" element={<HousingSheet/>}/>
                     {/*<Route path='playground' element={<Playground/>}/>*/}
                 </Route>
             </Routes>

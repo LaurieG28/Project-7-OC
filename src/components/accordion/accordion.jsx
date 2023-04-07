@@ -1,24 +1,40 @@
-import './collapse.scss';
+import './accordion.scss';
 import imageArrow from '../../assets/images/arrow_back_ios-24px 2.png';
 import {useState} from 'react';
 
-function Collapse({title, content}) {
+function Accordion({title, content, isSmall}) {
     const [isOpen, setOpen] = useState(false);
     const toggleAccordion = () => {
         setOpen(!isOpen);
     };
 
+    let accordionOpenClose;
+    let small;
+
+    if (isOpen) {
+        accordionOpenClose = ' accordion-open';
+    } else {
+        accordionOpenClose = ' accordion-close';
+    }
+
+    if (isSmall) {
+        small = ' small';
+    } else {
+        small = '';
+    }
+
     return (
-        <div className={isOpen ? 'accordion accordion-open' : 'accordion accordion-close'}>
+        <div
+            className={'accordion' + accordionOpenClose + small}>
             <div className="header" onClick={toggleAccordion}>
                 <div className="title">{title}</div>
                 <img className="arrow" src={imageArrow}></img>
             </div>
             <div className="content">
-                <span>{content}</span>
+                {content}
             </div>
         </div>
     )
 }
 
-export default Collapse;
+export default Accordion;

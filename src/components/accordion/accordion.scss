@@ -2,12 +2,19 @@
 
 .accordion {
   user-select: none;
-  margin-right: 109px;
-  margin-left: 108px;
   color: $white;
   display: flex;
   flex-direction: column;
-  margin-top: 33px;
+
+  .title, .content {
+    font-size: 24px;
+  }
+
+  &.small {
+    .title, .content {
+      font-size: 18px;
+    }
+  }
 
   &.accordion-close {
     .header {
@@ -20,8 +27,6 @@
 
   &.accordion-open {
     .header {
-      padding-right: 33px;
-
       .arrow {
         transition: all 0.35s;
         transform: rotate(180deg);
@@ -31,8 +36,8 @@
     .content {
       opacity: 1;
       max-height: inherit;
-      padding-top: 27px;
-      padding-bottom: 19px;
+      padding-top: 30px;
+      padding-bottom: 20px;
     }
   }
 
@@ -45,13 +50,12 @@
     background-color: $primary;
     border-radius: 5px;
     height: 47px;
-    padding-left: 18.08px;
+    padding-left: 18px;
     padding-right: 33px;
 
     .title {
       font-weight: 500;
-      font-size: 24px;
-      Line-height: 34.22px;
+      line-height: 34px;
     }
   }
 
@@ -64,12 +68,8 @@
     border-radius: 5px;
     padding-left: 19px;
     padding-right: 33px;
-
-    span {
-      color: $primary;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 34.22px;
-    }
+    color: $primary;
+    font-weight: 400;
+    line-height: 34px;
   }
 }
