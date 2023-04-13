@@ -13,6 +13,8 @@
   &.small {
     .title, .content {
       font-size: 18px;
+      line-height: 26px;
+      font-weight: 500;
     }
   }
 
@@ -48,14 +50,13 @@
     justify-content: space-between;
     cursor: pointer;
     background-color: $primary;
-    border-radius: 5px;
-    height: 47px;
     padding-left: 18px;
     padding-right: 33px;
+    border-radius: 10px;
+    height: 47px;
 
     .title {
       font-weight: 500;
-      line-height: 34px;
     }
   }
 
@@ -73,3 +74,28 @@
     line-height: 34px;
   }
 }
+
+@media screen and (max-width: $phone-size) {
+  .accordion {
+    .header {
+      height: 30px;
+      border-radius: 5px;
+      padding-left: 12px;
+      padding-right: 7px;
+
+      .title {
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+  }
+  .accordion.accordion-open .content {
+    padding-top: 17px;
+    padding-left: 12px;
+    padding-right: 7px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+

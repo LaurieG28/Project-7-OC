@@ -26,36 +26,41 @@ function HousingSheet() {
 
     if (house) {
         return (
-            <div id="housing-sheet" className="page">
+            <div id="housing-sheet" className="housing-page">
                 <div className="carousel-pictures">
                     <Slideshow pictures={house.pictures}/>
                 </div>
-
-                <div className="location-host">
-                    <span>{house.title}</span>
-                    <div className="host-infos">
-                        <div className="name">
+                <div className="section-info">
+                    <div className="housing-description">
+                        <span>{house.title}</span>
+                        <div className="location">{house.location}</div>
+                        <div className="tags">
                             {
-                                house.host.name.split(' ').map((name, i) => (
-                                    <span key={i}>{name}</span>
+                                house.tags.map((tag, i) => (
+                                    <Tag key={i} tag={tag}/>
                                 ))
+
                             }
                         </div>
-                        <img className="host-picture" src={house.host.picture} alt="host-picture"/>
                     </div>
-                </div>
-                <div className="location">{house.location}</div>
-                <div className="housing-infos">
-                    <div className="tags">
-                        {
-                            house.tags.map((tag, i) => (
-                                <Tag key={i} tag={tag}/>
-                            ))
+                    <div className="host-infos">
+                        <div className="name">
+                            <div className="first-last-name">
+                                {
+                                    house.host.name.split(' ').map((name, i) => (
+                                        <span key={i}>{name}</span>
+                                    ))
+                                }
+                            </div>
+                            <div className="picture">
+                                <img className="host-picture" src={house.host.picture} alt="host-picture"/>
+                            </div>
+                        </div>
 
-                        }
-                    </div>
-                    <div className="star">
-                        {houseRating(house.rating)}
+
+                        <div className="star">
+                            {houseRating(house.rating)}
+                        </div>
                     </div>
                 </div>
                 <div className="housing-sheet-accordions">

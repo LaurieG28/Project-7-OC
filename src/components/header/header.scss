@@ -29,3 +29,20 @@ header {
     }
   }
 }
+
+@media screen and (max-width: $phone-size) {
+  header {
+
+    img {
+      height: 47px;
+    }
+
+    nav {
+      gap: 10px;
+
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}

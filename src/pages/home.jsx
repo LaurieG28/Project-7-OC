@@ -6,7 +6,7 @@ import housing from '../assets/housing.json';
 
 function Home() {
     return (
-        <div id="home" className="page">
+        <div id="home" className="home-page">
             <Banner imageSrc={imageSrc} imageText="Chez vous, partout et ailleurs" imageAlt="Bord de mer"/>
 
             <div className="housing-gallery">

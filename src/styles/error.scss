@@ -1,10 +1,11 @@
 @import "variables";
 
 
-#error {
+.error-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 169px;
 
   .number, .content, .link {
     color: $primary;
@@ -31,3 +32,30 @@
     margin-bottom: 159px;
   }
 }
+
+@media screen and (max-width: $phone-size) {
+  .error-page {
+    margin-top: 195px;
+
+    .number {
+      font-size: 96px;
+      line-height: 137px;
+    }
+
+    .content {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      margin-top: 11px;
+      margin-bottom: 0px;
+    }
+
+    .link {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 133px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
