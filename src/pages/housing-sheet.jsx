@@ -72,7 +72,7 @@ function HousingSheet() {
             </div>
         )
     } else {
-        return (<Navigate to="/"/>);
+        return (<Navigate to="/*"/>);
     }
 
 }

@@ -23,16 +23,21 @@ function Slideshow({pictures}) {
 
     return (
         <div className="slideshow">
-            <div className="left-arrow" onClick={onClickLeft}>
-                <img id="image" alt="Image précédente" src={arrowLeft}></img>
-            </div>
             <div className="pictures">
                 <img src={pictures[currentPicture]}></img>
             </div>
-            <div className="bullet-point">{(currentPicture + 1) + '/' + pictures.length}</div>
-            <div className="right-arrow" onClick={onClickRight}>
-                <img id="image" alt="Image suivante" src={arrowRight}></img>
-            </div>
+            {
+                pictures.length > 1 &&
+                <>
+                    <div className="left-arrow" onClick={onClickLeft}>
+                        <img id="image" alt="Image précédente" src={arrowLeft}></img>
+                    </div>
+                    <div className="bullet-point">{(currentPicture + 1) + '/' + pictures.length}</div>
+                    <div className="right-arrow" onClick={onClickRight}>
+                        <img id="image" alt="Image suivante" src={arrowRight}></img>
+                    </div>
+                </>
+            }
         </div>
     )
 }
