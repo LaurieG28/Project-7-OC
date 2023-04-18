@@ -2,13 +2,13 @@ import '../banner/banner.scss';
 
 function Banner({imageAlt, imageSrc, imageText}) {
     return (
-        <section id="banner-section">
+        <section className="banner-section">
             <div>
-                <div id="image-container">
-                    <img id="image" alt={imageAlt} src={imageSrc}></img>
-                    <div id="mask"></div>
+                <div className="image-container">
+                    <img className="image" alt={imageAlt} src={imageSrc}></img>
+                    <div className="mask"></div>
                 </div>
-                <div id="image-texte">
+                <div className="image-texte">
                     <span>{imageText}</span>
                 </div>
             </div>

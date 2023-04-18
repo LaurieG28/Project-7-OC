@@ -82,8 +82,10 @@
     .accordion {
       flex: 50%;
 
-      .equipment {
-        height: 26px;
+      .title, .content {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 500;
       }
     }
   }
@@ -91,7 +93,6 @@
 
 
 @media screen and (max-width: $phone-size) {
-
   .housing-page {
     .section-info {
       display: flex;
@@ -133,6 +134,12 @@
         .star {
           gap: 7px;
           align-items: end;
+          height: 13px;
+          margin-top: 24px;
+
+          img {
+            height: 13px;
+          }
         }
       }
     }
@@ -144,6 +151,11 @@
 
       .accordion {
         border-radius: 5px;
+
+        .title, .content {
+          font-size: 12px;
+          line-height: 17px;
+        }
       }
     }
   }

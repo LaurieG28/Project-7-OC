@@ -64,10 +64,10 @@ function HousingSheet() {
                     </div>
                 </div>
                 <div className="housing-sheet-accordions">
-                    <Accordion content={house.description} title="Description" isSmall={true}/>
+                    <Accordion content={house.description} title="Description"/>
                     <Accordion content={house.equipments.map((equipment, i) => (
-                        <div key={i} className="equipment">{equipment}</div>))}
-                               title="Équipements" isSmall={true}/>
+                        <div key={i}>{equipment}</div>))}
+                               title="Équipements"/>
                 </div>
             </div>
         )

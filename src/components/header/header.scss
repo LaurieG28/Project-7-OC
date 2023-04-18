@@ -46,3 +46,11 @@ header {
     }
   }
 }
+
+@media screen and (max-width: $tablet-size) {
+  header {
+    nav {
+      gap: 10px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 @import "src/styles/variables";
 
-#banner-section {
+.banner-section {
   position: relative;
   height: 223px;
 
@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
 
-    > #image-texte {
+    .image-texte {
       position: absolute;
       top: 0;
       display: flex;
@@ -22,20 +22,20 @@
       }
     }
 
-    > #image-container {
+    .image-container {
       position: relative;
 
-      * {
+      img, div {
         width: 100%;
         height: 100%;
         border-radius: 25px;
       }
 
-      #image {
+      .image {
         object-fit: cover;
       }
 
-      #mask {
+      .mask {
         position: absolute;
         background: $black;
         mix-blend-mode: darken;
@@ -47,11 +47,17 @@
 }
 
 @media screen and (max-width: $phone-size) {
-  #banner-section {
+  .banner-section {
     margin-bottom: 22px;
 
     div {
-      > #image-texte {
+      .image-container {
+        img, div {
+          border-radius: 10px;
+        }
+      }
+
+      .image-texte {
         span {
           font-size: 24px;
           line-height: 24px;
@@ -59,5 +65,19 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: $tablet-size) {
+  .banner-section {
+    div {
+      .image-texte {
+        span {
+          font-size: 24px;
+          padding-left: 20px;
+        }
+      }
+    }
+
   }
 }
