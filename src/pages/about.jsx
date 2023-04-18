@@ -6,8 +6,6 @@ import '../styles/about.scss';
 function About() {
     return (
         <div id="about" className="about-page">
-            <header className="about-header">
-            </header>
             <Banner imageSrc={imageSrc} imageAlt="Montagne"/>
             <div className="about-accordions">
                 <Accordion

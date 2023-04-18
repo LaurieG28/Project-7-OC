@@ -15,9 +15,9 @@ function HousingSheet() {
 
         for (let i = 1; i <= 5; i++) {
             if (i <= rating) {
-                stars.push(<img key={i} className="starfilled" src={starFilled}/>);
+                stars.push(<img key={i} src={starFilled}/>);
             } else {
-                stars.push(<img key={i} className="EmptyStar" src={emptyStar}/>);
+                stars.push(<img key={i} src={emptyStar}/>);
             }
         }
 
