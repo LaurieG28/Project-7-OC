@@ -7,7 +7,8 @@
     cursor: pointer;
     position: absolute;
     left: 0;
-    top: 38%;
+    top: 50%;
+    transform: translateY(-50%);
     padding-left: 23px;
   }
 
@@ -15,7 +16,8 @@
     cursor: pointer;
     position: absolute;
     right: 0;
-    top: 38%;
+    top: 50%;
+    transform: translateY(-50%);
     padding-right: 23px;
   }
 
@@ -33,12 +35,13 @@
     justify-content: center;
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
     bottom: 5%;
     color: $white;
   }
 }
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   .slideshow {
     .left-arrow {
       padding-left: 6px;
@@ -50,6 +53,33 @@
 
     .bullet-point {
       display: none;
+    }
+
+    #image {
+      width: 12px;
+      height: 20px;
+    }
+
+    .pictures {
+      height: 255px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $phone-max-size) and (max-width: $tablet-max-size) {
+  .slideshow {
+    .left-arrow {
+      padding-left: 6px;
+    }
+
+    .right-arrow {
+      padding-right: 6px;
     }
 
     #image {

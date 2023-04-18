@@ -11,7 +11,7 @@
   }
 }
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   .about-page {
     .about-accordions {
       margin: 0px;
@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: $tablet-size) {
+@media screen and (min-width: $phone-max-size) and (max-width: $tablet-max-size) {
   .about-page {
     .about-accordions {
       margin-right: 50px;

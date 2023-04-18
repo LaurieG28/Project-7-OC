@@ -16,7 +16,7 @@ body {
   }
 }
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   body {
     #root {
       .page {

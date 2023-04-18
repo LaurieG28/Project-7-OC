@@ -92,7 +92,7 @@
 }
 
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   .housing-page {
     .section-info {
       display: flex;

@@ -30,7 +30,7 @@ header {
   }
 }
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   header {
 
     img {
@@ -47,10 +47,14 @@ header {
   }
 }
 
-@media screen and (max-width: $tablet-size) {
+@media screen and (min-width: $phone-max-size) and (max-width: $tablet-max-size) {
   header {
+    img {
+      height: 47px;
+    }
+
     nav {
-      gap: 10px;
+      gap: 30px;
     }
   }
 }

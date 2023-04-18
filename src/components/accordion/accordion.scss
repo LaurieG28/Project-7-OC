@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   .accordion {
     .header {
       height: 30px;

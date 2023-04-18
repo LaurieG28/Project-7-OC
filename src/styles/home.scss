@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   .home-page {
     .banner-section {
       max-height: 111px;
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (max-width: $tablet-size) {
+@media screen and (min-width: $phone-max-size) and (max-width: $tablet-max-size) {
   .home-page {
     .housing-gallery {
       a {

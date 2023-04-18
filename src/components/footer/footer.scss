@@ -20,7 +20,7 @@ footer {
   }
 }
 
-@media screen and (max-width: $phone-size) {
+@media screen and (max-width: $phone-max-size) {
   footer {
     margin-top: 16px;
 
