@@ -67,14 +67,13 @@ function HousingSheet() {
                     <Accordion content={house.description} title="Description"/>
                     <Accordion content={house.equipments.map((equipment, i) => (
                         <div key={i}>{equipment}</div>))}
-                               title="Équipements"/>
+                               title="Equipments"/>
                 </div>
             </div>
         )
     } else {
         return (<Navigate to="/*"/>);
     }
-
 }
 
 export default HousingSheet;
